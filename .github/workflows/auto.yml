@@ -2,20 +2,26 @@ name: Daily HK Stock Update
 
 on:
   schedule:
-    # 每天 UTC 時間 08:30 執行 (等於香港時間下午 16:30，港股收市後更新)
+    # 每天香港時間下午 16:30 執行
     - cron: '30 8 * * *'
-  workflow_dispatch: # 加入這行，允許我們手動點擊按鈕來執行測試
+  workflow_dispatch:
+
+# 新增這段：明確賦予機器人寫入檔案的權限
+permissions:
+  contents: write
 
 jobs:
   update-data:
     runs-on: ubuntu-latest
 
     steps:
+    # 升級到 v4 (解決 Node.js 警告)
     - name: 下載您的程式碼
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
+    # 升級到 v5 (解決 Node.js 警告)
     - name: 安裝 Python 環境
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: '3.10'
 
