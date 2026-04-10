@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HK Quant Master V10.10 Pro (複製版)</title>
+    <title>HK Quant Master V10.10 Pro (自動更新版)</title>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 20px; background-color: #f5f5f5; color: #333; }
         .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
@@ -23,39 +23,23 @@
         .btn-perplexity { background-color: #22B8CD; }
         .badge-red { background: #ff4d4f; color: white; padding: 3px 8px; border-radius: 12px; font-size: 12px; }
         .badge-green { background: #52c41a; color: white; padding: 3px 8px; border-radius: 12px; font-size: 12px; }
+        .badge-gray { background: #8c8c8c; color: white; padding: 3px 8px; border-radius: 12px; font-size: 12px; }
     </style>
 </head>
 <body>
     <div class="header">
         <h2>📊 HK Quant Master V10.10 Pro</h2>
-        <p>最後更新時間: 2026-04-10 (示範數據) | 提示: 使用鍵盤 ↑ ↓ 極速切換圖表</p>
+        <p id="updateTime">數據載入中... | 提示: 使用鍵盤 ↑ ↓ 極速切換圖表</p>
     </div>
-    
     <div class="container">
-        <!-- 左側：股票數據表 -->
         <div class="left-panel">
             <table id="stockTable">
-                <thead>
-                    <tr>
-                        <th>股票代號</th>
-                        <th>名稱</th>
-                        <th>現價</th>
-                        <th>策略訊號</th>
-                    </tr>
-                </thead>
-                <tbody id="tableBody">
-                    <!-- 數據由 JavaScript 生成 -->
-                </tbody>
+                <thead><tr><th>股票代號</th><th>名稱</th><th>現價</th><th>策略訊號</th></tr></thead>
+                <tbody id="tableBody"><tr><td colspan="4">載入最新真實數據中...</td></tr></tbody>
             </table>
         </div>
-
-        <!-- 右側：圖表與 AI 診斷 -->
         <div class="right-panel">
-            <div class="chart-box" id="tv_chart_container">
-                <!-- TradingView 圖表將在此渲染 -->
-                <div id="tradingview_chart" style="height: 100%;"></div>
-            </div>
-            
+            <div class="chart-box" id="tv_chart_container"><div id="tradingview_chart" style="height: 100%;"></div></div>
             <div class="ai-box">
                 <h3>🤖 三大 AI 聯合診斷 (複製數據並開啟)</h3>
                 <p id="selectedDataText" style="color: gray;">請先選擇左側股票</p>
@@ -66,94 +50,67 @@
         </div>
     </div>
 
-    <!-- 載入 TradingView 腳本 -->
     <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
     <script>
-        // 1. 設定模擬的港股數據 (日後可用 Python 自動更新這一段)
-        const stocks = [
-            { code: "0700.HK", symbol: "HKEX:700", name: "騰訊控股", price: 310.2, signal: "海龜突破", badge: "badge-red" },
-            { code: "9988.HK", symbol: "HKEX:9988", name: "阿里巴巴", price: 72.5, signal: "RSI < 25", badge: "badge-green" },
-            { code: "3690.HK", symbol: "HKEX:3690", name: "美團", price: 105.4, signal: "布林軌道下穿", badge: "badge-green" },
-            { code: "0941.HK", symbol: "HKEX:941", name: "中國移動", price: 68.9, signal: "均線金叉", badge: "badge-red" },
-            { code: "1299.HK", symbol: "HKEX:1299", name: "友邦保險", price: 55.3, signal: "海龜突破", badge: "badge-red" }
-        ];
-
+        let stocks = [];
         let currentIndex = 0;
-        let tvWidget = null;
 
-        // 2. 渲染表格
-        const tbody = document.getElementById('tableBody');
-        stocks.forEach((stock, index) => {
-            const tr = document.createElement('tr');
-            tr.id = `row-${index}`;
-            tr.innerHTML = `
-                <td>${stock.code}</td>
-                <td>${stock.name}</td>
-                <td>$${stock.price}</td>
-                <td><span class="${stock.badge}">${stock.signal}</span></td>
-            `;
-            tr.onclick = () => selectStock(index);
-            tbody.appendChild(tr);
-        });
+        // 自動去讀取 Python 產生的 json 檔案
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('updateTime').innerText = `最後更新時間: ${data.update_time} | 提示: 使用鍵盤 ↑ ↓ 極速切換圖表`;
+                stocks = data.stocks;
+                renderTable();
+                if(stocks.length > 0) selectStock(0);
+            })
+            .catch(error => {
+                document.getElementById('tableBody').innerHTML = '<tr><td colspan="4" style="color:red;">請先執行自動更新腳本產生數據檔案！</td></tr>';
+            });
 
-        // 3. 選擇股票與切換 TradingView 圖表
+        function renderTable() {
+            const tbody = document.getElementById('tableBody');
+            tbody.innerHTML = '';
+            stocks.forEach((stock, index) => {
+                const tr = document.createElement('tr');
+                tr.id = `row-${index}`;
+                tr.innerHTML = `<td>${stock.code}</td><td>${stock.name}</td><td>$${stock.price}</td><td><span class="${stock.badge}">${stock.signal}</span></td>`;
+                tr.onclick = () => selectStock(index);
+                tbody.appendChild(tr);
+            });
+        }
+
         function selectStock(index) {
-            // 移除舊的高亮
-            document.getElementById(`row-${currentIndex}`).classList.remove('selected');
-            // 更新索引並加上高亮
+            const oldRow = document.getElementById(`row-${currentIndex}`);
+            if(oldRow) oldRow.classList.remove('selected');
             currentIndex = index;
             document.getElementById(`row-${currentIndex}`).classList.add('selected');
             
             const stock = stocks[currentIndex];
             document.getElementById('selectedDataText').innerText = `已選擇: ${stock.code} ${stock.name} - 現價 $${stock.price} (${stock.signal})`;
 
-            // 動態更新 TradingView 圖表
+            document.getElementById('tradingview_chart').innerHTML = '';
             new TradingView.widget({
-                "autosize": true,
-                "symbol": stock.symbol,
-                "interval": "D",
-                "timezone": "Asia/Hong_Kong",
-                "theme": "light",
-                "style": "1",
-                "locale": "zh_TW",
-                "enable_publishing": false,
-                "allow_symbol_change": false,
-                "container_id": "tradingview_chart"
+                "autosize": true, "symbol": stock.symbol, "interval": "D", "timezone": "Asia/Hong_Kong",
+                "theme": "light", "style": "1", "locale": "zh_TW", "enable_publishing": false,
+                "allow_symbol_change": false, "container_id": "tradingview_chart"
             });
         }
 
-        // 4. 監聽鍵盤 ↑ ↓ 方向鍵
         document.addEventListener('keydown', (e) => {
-            if (e.key === 'ArrowDown') {
-                e.preventDefault();
-                if (currentIndex < stocks.length - 1) selectStock(currentIndex + 1);
-            } else if (e.key === 'ArrowUp') {
-                e.preventDefault();
-                if (currentIndex > 0) selectStock(currentIndex - 1);
-            }
+            if (e.key === 'ArrowDown') { e.preventDefault(); if (currentIndex < stocks.length - 1) selectStock(currentIndex + 1); } 
+            else if (e.key === 'ArrowUp') { e.preventDefault(); if (currentIndex > 0) selectStock(currentIndex - 1); }
         });
 
-        // 5. AI 診斷按鈕功能：複製文字並另開視窗
         function triggerAI(aiType) {
             const stock = stocks[currentIndex];
             const prompt = `請幫我以量化及技術分析的角度，診斷港股 ${stock.code} (${stock.name})，目前現價為 ${stock.price}，並且觸發了「${stock.signal}」訊號。`;
-            
-            // 複製到剪貼簿
             navigator.clipboard.writeText(prompt).then(() => {
                 alert(`已將數據複製！\n即將為您打開 ${aiType}，請直接按 Ctrl+V 或 Cmd+V 貼上並發問。`);
-                
-                // 開啟對應的 AI 網站
-                let url = "";
-                if (aiType === 'gemini') url = "https://gemini.google.com/";
-                else if (aiType === 'grok') url = "https://grok.com/";
-                else if (aiType === 'perplexity') url = "https://www.perplexity.ai/";
-                
+                let url = aiType === 'gemini' ? "https://gemini.google.com/" : (aiType === 'grok' ? "https://grok.com/" : "https://www.perplexity.ai/");
                 window.open(url, '_blank');
             });
         }
-
-        // 初始化選中第一行
-        selectStock(0);
     </script>
 </body>
 </html>
