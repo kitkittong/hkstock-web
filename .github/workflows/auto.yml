@@ -2,24 +2,24 @@ name: Daily HK Stock Update
 
 on:
   schedule:
-    # 每天香港時間下午 16:30 執行
     - cron: '30 8 * * *'
   workflow_dispatch:
 
-# 新增這段：明確賦予機器人寫入檔案的權限
 permissions:
   contents: write
 
 jobs:
   update-data:
     runs-on: ubuntu-latest
+    
+    # 加入這行環境變數，強制套件使用最新的 Node 24 執行環境
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
     steps:
-    # 升級到 v4 (解決 Node.js 警告)
     - name: 下載您的程式碼
       uses: actions/checkout@v4
 
-    # 升級到 v5 (解決 Node.js 警告)
     - name: 安裝 Python 環境
       uses: actions/setup-python@v5
       with:
