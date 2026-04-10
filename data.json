@@ -1,0 +1,45 @@
+{
+    "update_time": "2026-04-11 03:36:42",
+    "stocks": [
+        {
+            "code": "0700.HK",
+            "symbol": "HKEX:0700",
+            "name": "騰訊控股",
+            "price": 504.5,
+            "signal": "均線震盪",
+            "badge": "badge-gray"
+        },
+        {
+            "code": "9988.HK",
+            "symbol": "HKEX:9988",
+            "name": "阿里巴巴",
+            "price": 125.5,
+            "signal": "海龜突破",
+            "badge": "badge-red"
+        },
+        {
+            "code": "3690.HK",
+            "symbol": "HKEX:3690",
+            "name": "美團",
+            "price": 87.6,
+            "signal": "均線震盪",
+            "badge": "badge-gray"
+        },
+        {
+            "code": "0941.HK",
+            "symbol": "HKEX:0941",
+            "name": "中國移動",
+            "price": 81.1,
+            "signal": "均線震盪",
+            "badge": "badge-gray"
+        },
+        {
+            "code": "1299.HK",
+            "symbol": "HKEX:1299",
+            "name": "友邦保險",
+            "price": 88.95,
+            "signal": "均線震盪",
+            "badge": "badge-gray"
+        }
+    ]
+}
