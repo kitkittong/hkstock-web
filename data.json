@@ -1,17 +1,17 @@
 {
-    "update_time": "2026-04-15 17:58:28",
+    "update_time": "2026-04-16 17:57:38",
     "hsi": {
-        "price": 25947.32,
-        "change_pct": 0.29
+        "price": 26394.26,
+        "change_pct": 1.72
     },
     "strong_sectors": [
         {
             "sector": "金融銀行",
-            "score": 5.37
+            "score": 5.22
         },
         {
             "sector": "科技互聯網",
-            "score": 0.62
+            "score": 1.37
         }
     ],
     "stocks": [
@@ -20,7 +20,7 @@
             "symbol": "HKEX:700",
             "name": "騰訊控股",
             "sector": "科技互聯網",
-            "price": 499.0,
+            "price": 517.0,
             "signal": "區間震盪",
             "badge": "badge-gray"
         },
@@ -29,7 +29,7 @@
             "symbol": "HKEX:9988",
             "name": "阿里巴巴-SW",
             "sector": "科技互聯網",
-            "price": 128.6,
+            "price": 135.8,
             "signal": "區間震盪",
             "badge": "badge-gray"
         },
@@ -38,7 +38,7 @@
             "symbol": "HKEX:3690",
             "name": "美團-W",
             "sector": "科技互聯網",
-            "price": 86.3,
+            "price": 88.75,
             "signal": "強勢突破",
             "badge": "badge-red"
         },
@@ -47,7 +47,7 @@
             "symbol": "HKEX:883",
             "name": "中國海洋石油",
             "sector": "能源/石油",
-            "price": 26.22,
+            "price": 26.7,
             "signal": "弱勢探底",
             "badge": "badge-green"
         },
@@ -56,7 +56,7 @@
             "symbol": "HKEX:5",
             "name": "匯豐控股",
             "sector": "金融銀行",
-            "price": 141.4,
+            "price": 142.3,
             "signal": "強勢突破",
             "badge": "badge-red"
         },
@@ -65,9 +65,9 @@
             "symbol": "HKEX:939",
             "name": "建設銀行",
             "sector": "金融銀行",
-            "price": 8.48,
-            "signal": "區間震盪",
-            "badge": "badge-gray"
+            "price": 8.55,
+            "signal": "強勢突破",
+            "badge": "badge-red"
         }
     ]
 }
