@@ -1,17 +1,17 @@
 {
-    "update_time": "2026-04-22 18:03:13",
+    "update_time": "2026-04-23 18:07:24",
     "hsi": {
-        "price": 26163.24,
-        "change_pct": -1.22
+        "price": 25915.2,
+        "change_pct": -0.95
     },
     "strong_sectors": [
         {
             "sector": "金融銀行",
-            "score": 5.45
+            "score": 4.94
         },
         {
             "sector": "科技互聯網",
-            "score": 3.72
+            "score": 2.44
         }
     ],
     "stocks": [
@@ -20,7 +20,7 @@
             "symbol": "HKEX:700",
             "name": "騰訊控股",
             "sector": "科技互聯網",
-            "price": 504.0,
+            "price": 495.2,
             "signal": "區間震盪",
             "badge": "badge-gray"
         },
@@ -29,7 +29,7 @@
             "symbol": "HKEX:9988",
             "name": "阿里巴巴-SW",
             "sector": "科技互聯網",
-            "price": 131.5,
+            "price": 130.4,
             "signal": "區間震盪",
             "badge": "badge-gray"
         },
@@ -38,7 +38,7 @@
             "symbol": "HKEX:3690",
             "name": "美團-W",
             "sector": "科技互聯網",
-            "price": 84.25,
+            "price": 83.1,
             "signal": "區間震盪",
             "badge": "badge-gray"
         },
@@ -47,27 +47,27 @@
             "symbol": "HKEX:883",
             "name": "中國海洋石油",
             "sector": "能源/石油",
-            "price": 26.88,
-            "signal": "弱勢探底",
-            "badge": "badge-green"
+            "price": 27.66,
+            "signal": "區間震盪",
+            "badge": "badge-gray"
         },
         {
             "code": "0005",
             "symbol": "HKEX:5",
             "name": "匯豐控股",
             "sector": "金融銀行",
-            "price": 144.0,
-            "signal": "強勢突破",
-            "badge": "badge-red"
+            "price": 141.1,
+            "signal": "區間震盪",
+            "badge": "badge-gray"
         },
         {
             "code": "0939",
             "symbol": "HKEX:939",
             "name": "建設銀行",
             "sector": "金融銀行",
-            "price": 8.77,
-            "signal": "區間震盪",
-            "badge": "badge-gray"
+            "price": 8.83,
+            "signal": "強勢突破",
+            "badge": "badge-red"
         }
     ]
 }
