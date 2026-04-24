@@ -1,17 +1,17 @@
 {
-    "update_time": "2026-04-23 18:07:24",
+    "update_time": "2026-04-24 18:08:12",
     "hsi": {
-        "price": 25915.2,
-        "change_pct": -0.95
+        "price": 25978.07,
+        "change_pct": 0.24
     },
     "strong_sectors": [
         {
             "sector": "金融銀行",
-            "score": 4.94
+            "score": 4.53
         },
         {
             "sector": "科技互聯網",
-            "score": 2.44
+            "score": 1.54
         }
     ],
     "stocks": [
@@ -20,7 +20,7 @@
             "symbol": "HKEX:700",
             "name": "騰訊控股",
             "sector": "科技互聯網",
-            "price": 495.2,
+            "price": 493.4,
             "signal": "區間震盪",
             "badge": "badge-gray"
         },
@@ -29,16 +29,16 @@
             "symbol": "HKEX:9988",
             "name": "阿里巴巴-SW",
             "sector": "科技互聯網",
-            "price": 130.4,
-            "signal": "區間震盪",
-            "badge": "badge-gray"
+            "price": 131.8,
+            "signal": "強勢突破",
+            "badge": "badge-red"
         },
         {
             "code": "3690",
             "symbol": "HKEX:3690",
             "name": "美團-W",
             "sector": "科技互聯網",
-            "price": 83.1,
+            "price": 82.45,
             "signal": "區間震盪",
             "badge": "badge-gray"
         },
@@ -47,7 +47,7 @@
             "symbol": "HKEX:883",
             "name": "中國海洋石油",
             "sector": "能源/石油",
-            "price": 27.66,
+            "price": 27.9,
             "signal": "區間震盪",
             "badge": "badge-gray"
         },
@@ -56,7 +56,7 @@
             "symbol": "HKEX:5",
             "name": "匯豐控股",
             "sector": "金融銀行",
-            "price": 141.1,
+            "price": 140.0,
             "signal": "區間震盪",
             "badge": "badge-gray"
         },
@@ -65,7 +65,7 @@
             "symbol": "HKEX:939",
             "name": "建設銀行",
             "sector": "金融銀行",
-            "price": 8.83,
+            "price": 8.95,
             "signal": "強勢突破",
             "badge": "badge-red"
         }
