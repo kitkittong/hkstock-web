@@ -1,17 +1,17 @@
 {
-    "update_time": "2026-06-08 20:46:23",
+    "update_time": "2026-06-09 19:41:09",
     "hsi": {
-        "price": 24657.06,
-        "change_pct": -1.22
+        "price": 24565.9,
+        "change_pct": -0.37
     },
     "strong_sectors": [
         {
             "sector": "能源/石油",
-            "score": 0.64
+            "score": 0.13
         },
         {
             "sector": "金融銀行",
-            "score": 0.42
+            "score": 0.12
         }
     ],
     "stocks": [
@@ -20,7 +20,7 @@
             "symbol": "HKEX:700",
             "name": "騰訊控股",
             "sector": "科技互聯網",
-            "price": 446.4,
+            "price": 453.2,
             "signal": "區間震盪",
             "badge": "badge-gray"
         },
@@ -29,7 +29,7 @@
             "symbol": "HKEX:9988",
             "name": "阿里巴巴-SW",
             "sector": "科技互聯網",
-            "price": 118.8,
+            "price": 117.1,
             "signal": "弱勢探底",
             "badge": "badge-green"
         },
@@ -38,16 +38,16 @@
             "symbol": "HKEX:3690",
             "name": "美團-W",
             "sector": "科技互聯網",
-            "price": 76.25,
-            "signal": "區間震盪",
-            "badge": "badge-gray"
+            "price": 77.2,
+            "signal": "弱勢探底",
+            "badge": "badge-green"
         },
         {
             "code": "0883",
             "symbol": "HKEX:883",
             "name": "中國海洋石油",
             "sector": "能源/石油",
-            "price": 27.06,
+            "price": 26.7,
             "signal": "區間震盪",
             "badge": "badge-gray"
         },
@@ -56,7 +56,7 @@
             "symbol": "HKEX:5",
             "name": "匯豐控股",
             "sector": "金融銀行",
-            "price": 142.3,
+            "price": 142.1,
             "signal": "區間震盪",
             "badge": "badge-gray"
         },
@@ -65,7 +65,7 @@
             "symbol": "HKEX:939",
             "name": "建設銀行",
             "sector": "金融銀行",
-            "price": 8.76,
+            "price": 8.69,
             "signal": "區間震盪",
             "badge": "badge-gray"
         }
