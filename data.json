@@ -1,13 +1,13 @@
 {
-    "update_time": "2026-06-22 22:13:29",
+    "update_time": "2026-06-23 19:39:47",
     "hsi": {
-        "price": 23768.52,
-        "change_pct": -0.65
+        "price": 23336.28,
+        "change_pct": -1.82
     },
     "strong_sectors": [
         {
             "sector": "金融銀行",
-            "score": 1.28
+            "score": 1.12
         }
     ],
     "stocks": [
@@ -16,16 +16,16 @@
             "symbol": "HKEX:700",
             "name": "騰訊控股",
             "sector": "科技互聯網",
-            "price": 433.0,
-            "signal": "區間震盪",
-            "badge": "badge-gray"
+            "price": 414.8,
+            "signal": "弱勢探底",
+            "badge": "badge-green"
         },
         {
             "code": "9988",
             "symbol": "HKEX:9988",
             "name": "阿里巴巴-SW",
             "sector": "科技互聯網",
-            "price": 102.9,
+            "price": 98.95,
             "signal": "弱勢探底",
             "badge": "badge-green"
         },
@@ -34,7 +34,7 @@
             "symbol": "HKEX:3690",
             "name": "美團-W",
             "sector": "科技互聯網",
-            "price": 72.0,
+            "price": 69.6,
             "signal": "弱勢探底",
             "badge": "badge-green"
         },
@@ -43,7 +43,7 @@
             "symbol": "HKEX:883",
             "name": "中國海洋石油",
             "sector": "能源/石油",
-            "price": 22.2,
+            "price": 21.9,
             "signal": "弱勢探底",
             "badge": "badge-green"
         },
@@ -52,16 +52,16 @@
             "symbol": "HKEX:5",
             "name": "匯豐控股",
             "sector": "金融銀行",
-            "price": 147.9,
-            "signal": "區間震盪",
-            "badge": "badge-gray"
+            "price": 148.7,
+            "signal": "強勢突破",
+            "badge": "badge-red"
         },
         {
             "code": "0939",
             "symbol": "HKEX:939",
             "name": "建設銀行",
             "sector": "金融銀行",
-            "price": 8.59,
+            "price": 8.63,
             "signal": "區間震盪",
             "badge": "badge-gray"
         }
