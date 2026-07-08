@@ -1,17 +1,22 @@
 {
-    "update_time": "2026-07-07 19:25:21",
+    "update_time": "2026-07-08 18:36:32",
     "hsi": {
-        "price": 23496.89,
-        "change_pct": -0.51
+        "price": 24199.46,
+        "change_pct": 2.99
     },
-    "strong_sectors": [],
+    "strong_sectors": [
+        {
+            "sector": "科技互聯網",
+            "score": 0.21
+        }
+    ],
     "stocks": [
         {
             "code": "0700",
             "symbol": "HKEX:700",
             "name": "騰訊控股",
             "sector": "科技互聯網",
-            "price": 461.2,
+            "price": 478.8,
             "signal": "區間震盪",
             "badge": "badge-gray"
         },
@@ -20,7 +25,7 @@
             "symbol": "HKEX:9988",
             "name": "阿里巴巴-SW",
             "sector": "科技互聯網",
-            "price": 95.8,
+            "price": 107.5,
             "signal": "弱勢探底",
             "badge": "badge-green"
         },
@@ -29,16 +34,16 @@
             "symbol": "HKEX:3690",
             "name": "美團-W",
             "sector": "科技互聯網",
-            "price": 78.35,
-            "signal": "區間震盪",
-            "badge": "badge-gray"
+            "price": 80.9,
+            "signal": "強勢突破",
+            "badge": "badge-red"
         },
         {
             "code": "0883",
             "symbol": "HKEX:883",
             "name": "中國海洋石油",
             "sector": "能源/石油",
-            "price": 21.1,
+            "price": 21.78,
             "signal": "弱勢探底",
             "badge": "badge-green"
         },
@@ -47,16 +52,16 @@
             "symbol": "HKEX:5",
             "name": "匯豐控股",
             "sector": "金融銀行",
-            "price": 153.3,
-            "signal": "強勢突破",
-            "badge": "badge-red"
+            "price": 151.9,
+            "signal": "區間震盪",
+            "badge": "badge-gray"
         },
         {
             "code": "0939",
             "symbol": "HKEX:939",
             "name": "建設銀行",
             "sector": "金融銀行",
-            "price": 7.83,
+            "price": 8.28,
             "signal": "弱勢探底",
             "badge": "badge-green"
         }
