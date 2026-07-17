@@ -1,21 +1,21 @@
 {
-    "update_time": "2026-07-16 18:28:59",
+    "update_time": "2026-07-17 18:19:14",
     "hsi": {
-        "price": 25008.6,
-        "change_pct": 1.33
+        "price": 24562.24,
+        "change_pct": -1.78
     },
     "strong_sectors": [
         {
             "sector": "科技互聯網",
-            "score": 8.17
+            "score": 8.4
         },
         {
             "sector": "能源/石油",
-            "score": 3.7
+            "score": 4.55
         },
         {
             "sector": "金融銀行",
-            "score": 1.6
+            "score": 1.92
         }
     ],
     "stocks": [
@@ -24,34 +24,34 @@
             "symbol": "HKEX:700",
             "name": "騰訊控股",
             "sector": "科技互聯網",
-            "price": 484.0,
-            "signal": "強勢突破",
-            "badge": "badge-red"
+            "price": 461.6,
+            "signal": "區間震盪",
+            "badge": "badge-gray"
         },
         {
             "code": "9988",
             "symbol": "HKEX:9988",
             "name": "阿里巴巴-SW",
             "sector": "科技互聯網",
-            "price": 116.9,
-            "signal": "強勢突破",
-            "badge": "badge-red"
+            "price": 112.6,
+            "signal": "區間震盪",
+            "badge": "badge-gray"
         },
         {
             "code": "3690",
             "symbol": "HKEX:3690",
             "name": "美團-W",
             "sector": "科技互聯網",
-            "price": 87.2,
-            "signal": "強勢突破",
-            "badge": "badge-red"
+            "price": 83.65,
+            "signal": "區間震盪",
+            "badge": "badge-gray"
         },
         {
             "code": "0883",
             "symbol": "HKEX:883",
             "name": "中國海洋石油",
             "sector": "能源/石油",
-            "price": 22.88,
+            "price": 22.72,
             "signal": "區間震盪",
             "badge": "badge-gray"
         },
@@ -61,15 +61,15 @@
             "name": "匯豐控股",
             "sector": "金融銀行",
             "price": 156.9,
-            "signal": "強勢突破",
-            "badge": "badge-red"
+            "signal": "區間震盪",
+            "badge": "badge-gray"
         },
         {
             "code": "0939",
             "symbol": "HKEX:939",
             "name": "建設銀行",
             "sector": "金融銀行",
-            "price": 8.19,
+            "price": 8.29,
             "signal": "區間震盪",
             "badge": "badge-gray"
         }
