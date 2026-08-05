@@ -1,21 +1,21 @@
 {
-    "update_time": "2026-08-04 19:04:30",
+    "update_time": "2026-08-05 19:01:08",
     "hsi": {
-        "price": 25852.92,
-        "change_pct": -0.12
+        "price": 25915.82,
+        "change_pct": 0.24
     },
     "strong_sectors": [
         {
-            "sector": "金融銀行",
-            "score": 5.33
+            "sector": "科技互聯網",
+            "score": 5.58
         },
         {
-            "sector": "科技互聯網",
-            "score": 4.92
+            "sector": "金融銀行",
+            "score": 4.37
         },
         {
             "sector": "能源/石油",
-            "score": 2.6
+            "score": 1.87
         }
     ],
     "stocks": [
@@ -24,16 +24,16 @@
             "symbol": "HKEX:700",
             "name": "騰訊控股",
             "sector": "科技互聯網",
-            "price": 487.6,
-            "signal": "區間震盪",
-            "badge": "badge-gray"
+            "price": 492.2,
+            "signal": "強勢突破",
+            "badge": "badge-red"
         },
         {
             "code": "9988",
             "symbol": "HKEX:9988",
             "name": "阿里巴巴-SW",
             "sector": "科技互聯網",
-            "price": 125.8,
+            "price": 128.1,
             "signal": "強勢突破",
             "badge": "badge-red"
         },
@@ -42,16 +42,16 @@
             "symbol": "HKEX:3690",
             "name": "美團-W",
             "sector": "科技互聯網",
-            "price": 92.7,
-            "signal": "區間震盪",
-            "badge": "badge-gray"
+            "price": 93.05,
+            "signal": "強勢突破",
+            "badge": "badge-red"
         },
         {
             "code": "0883",
             "symbol": "HKEX:883",
             "name": "中國海洋石油",
             "sector": "能源/石油",
-            "price": 23.58,
+            "price": 22.96,
             "signal": "區間震盪",
             "badge": "badge-gray"
         },
@@ -60,7 +60,7 @@
             "symbol": "HKEX:5",
             "name": "匯豐控股",
             "sector": "金融銀行",
-            "price": 166.5,
+            "price": 162.1,
             "signal": "區間震盪",
             "badge": "badge-gray"
         },
@@ -69,7 +69,7 @@
             "symbol": "HKEX:939",
             "name": "建設銀行",
             "sector": "金融銀行",
-            "price": 8.89,
+            "price": 8.8,
             "signal": "區間震盪",
             "badge": "badge-gray"
         }
