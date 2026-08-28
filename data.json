@@ -1,17 +1,17 @@
 {
-    "update_time": "2026-08-28 03:13:37",
+    "update_time": "2026-08-29 04:19:43",
     "hsi": {
-        "price": 25652.97,
-        "change_pct": 0.56
+        "price": 25565.74,
+        "change_pct": -0.34
     },
     "strong_sectors": [
         {
             "sector": "能源/石油",
-            "score": 4.49
+            "score": 4.13
         },
         {
             "sector": "金融銀行",
-            "score": 1.12
+            "score": 1.0
         }
     ],
     "stocks": [
