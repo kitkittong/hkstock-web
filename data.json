@@ -1,13 +1,17 @@
 {
-    "update_time": "2026-10-14 21:57:37",
+    "update_time": "2026-10-15 21:37:46",
     "hsi": {
-        "price": 24314.17,
-        "change_pct": -0.13
+        "price": 24062.72,
+        "change_pct": -1.03
     },
     "strong_sectors": [
         {
             "sector": "能源/石油",
-            "score": 1.67
+            "score": 1.84
+        },
+        {
+            "sector": "科技互聯網",
+            "score": 0.28
         }
     ],
     "stocks": [
@@ -16,7 +20,7 @@
             "symbol": "HKEX:700",
             "name": "騰訊控股",
             "sector": "科技互聯網",
-            "price": 423.4,
+            "price": 417.8,
             "signal": "區間震盪",
             "badge": "badge-gray"
         },
@@ -25,7 +29,7 @@
             "symbol": "HKEX:9988",
             "name": "阿里巴巴-SW",
             "sector": "科技互聯網",
-            "price": 110.5,
+            "price": 106.4,
             "signal": "區間震盪",
             "badge": "badge-gray"
         },
@@ -34,7 +38,7 @@
             "symbol": "HKEX:3690",
             "name": "美團-W",
             "sector": "科技互聯網",
-            "price": 77.1,
+            "price": 75.45,
             "signal": "區間震盪",
             "badge": "badge-gray"
         },
@@ -43,7 +47,7 @@
             "symbol": "HKEX:883",
             "name": "中國海洋石油",
             "sector": "能源/石油",
-            "price": 24.72,
+            "price": 24.2,
             "signal": "區間震盪",
             "badge": "badge-gray"
         },
@@ -52,7 +56,7 @@
             "symbol": "HKEX:5",
             "name": "匯豐控股",
             "sector": "金融銀行",
-            "price": 148.0,
+            "price": 147.9,
             "signal": "弱勢探底",
             "badge": "badge-green"
         },
@@ -61,7 +65,7 @@
             "symbol": "HKEX:939",
             "name": "建設銀行",
             "sector": "金融銀行",
-            "price": 9.85,
+            "price": 9.98,
             "signal": "區間震盪",
             "badge": "badge-gray"
         }
