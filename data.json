@@ -1,13 +1,13 @@
 {
-    "update_time": "2026-11-04 00:27:21",
+    "update_time": "2026-11-05 00:29:42",
     "hsi": {
-        "price": 23393.32,
-        "change_pct": 0.42
+        "price": 23525.97,
+        "change_pct": 0.57
     },
     "strong_sectors": [
         {
             "sector": "能源/石油",
-            "score": 1.25
+            "score": 1.14
         }
     ],
     "stocks": [
