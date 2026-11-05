@@ -1,13 +1,13 @@
 {
-    "update_time": "2026-11-05 00:29:42",
+    "update_time": "2026-11-06 00:41:21",
     "hsi": {
-        "price": 23525.97,
-        "change_pct": 0.57
+        "price": 23919.5,
+        "change_pct": 1.67
     },
     "strong_sectors": [
         {
             "sector": "能源/石油",
-            "score": 1.14
+            "score": 0.85
         }
     ],
     "stocks": [
@@ -17,8 +17,8 @@
             "name": "騰訊控股",
             "sector": "科技互聯網",
             "price": NaN,
-            "signal": "弱勢探底",
-            "badge": "badge-green"
+            "signal": "區間震盪",
+            "badge": "badge-gray"
         },
         {
             "code": "9988",
