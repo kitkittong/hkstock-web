@@ -1,17 +1,17 @@
 {
-    "update_time": "2026-11-11 00:33:28",
+    "update_time": "2026-11-12 00:29:49",
     "hsi": {
-        "price": 24448.95,
-        "change_pct": -0.13
+        "price": 24557.04,
+        "change_pct": 0.44
     },
     "strong_sectors": [
         {
             "sector": "科技互聯網",
-            "score": 3.72
+            "score": 4.23
         },
         {
             "sector": "金融銀行",
-            "score": 1.06
+            "score": 2.11
         }
     ],
     "stocks": [
@@ -48,8 +48,8 @@
             "name": "中國海洋石油",
             "sector": "能源/石油",
             "price": NaN,
-            "signal": "區間震盪",
-            "badge": "badge-gray"
+            "signal": "弱勢探底",
+            "badge": "badge-green"
         },
         {
             "code": "0005",
