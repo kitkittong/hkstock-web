@@ -1,17 +1,17 @@
 {
-    "update_time": "2026-11-13 01:00:25",
+    "update_time": "2026-11-14 00:41:06",
     "hsi": {
-        "price": 24315.92,
-        "change_pct": -0.98
+        "price": 24008.55,
+        "change_pct": -1.26
     },
     "strong_sectors": [
         {
-            "sector": "科技互聯網",
-            "score": 2.6
+            "sector": "金融銀行",
+            "score": 2.31
         },
         {
-            "sector": "金融銀行",
-            "score": 2.12
+            "sector": "科技互聯網",
+            "score": 0.7
         }
     ],
     "stocks": [
