@@ -1,13 +1,13 @@
 {
-    "update_time": "2026-11-20 01:34:08",
+    "update_time": "2026-11-21 01:09:31",
     "hsi": {
-        "price": 23294.75,
-        "change_pct": -0.91
+        "price": 22841.62,
+        "change_pct": -1.95
     },
     "strong_sectors": [
         {
             "sector": "金融銀行",
-            "score": 1.44
+            "score": 0.8
         }
     ],
     "stocks": [
